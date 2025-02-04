@@ -9,6 +9,10 @@ const app = express()
 app.get('/', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />)
 
+  const funcApp = <App />
+
+  console.log({ app, func: funcApp })
+
   const html = `
         <html lang="ja">
         <head>

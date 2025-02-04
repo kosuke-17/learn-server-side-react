@@ -19290,13 +19290,18 @@
 
   // src/App.jsx
   var import_react = __toESM(require_react());
+  var Test = () => {
+    return /* @__PURE__ */ import_react.default.createElement(import_react.default.Fragment, null, /* @__PURE__ */ import_react.default.createElement("h1", null, clientMessage));
+  };
   var App = () => {
-    const [clientMessage, setClientMessage] = (0, import_react.useState)("");
+    const [clientMessage2, setClientMessage] = (0, import_react.useState)("");
     const [count, setCount] = (0, import_react.useState)(0);
+    const test = /* @__PURE__ */ import_react.default.createElement(Test, null);
+    console.log({ test, type: test.type });
     (0, import_react.useEffect)(() => {
       setClientMessage("Hello World form Server!!");
     }, []);
-    return /* @__PURE__ */ import_react.default.createElement(import_react.default.Fragment, null, /* @__PURE__ */ import_react.default.createElement("h1", null, clientMessage), /* @__PURE__ */ import_react.default.createElement("h2", null, count), /* @__PURE__ */ import_react.default.createElement("button", { onClick: () => setCount((prev) => prev + 1) }, "\u30AF\u30EA\u30C3\u30AF"));
+    return /* @__PURE__ */ import_react.default.createElement(import_react.default.Fragment, null, /* @__PURE__ */ import_react.default.createElement("h1", null, clientMessage2), /* @__PURE__ */ import_react.default.createElement("h2", null, count), /* @__PURE__ */ import_react.default.createElement("button", { onClick: () => setCount((prev) => prev + 1) }, "\u30AF\u30EA\u30C3\u30AF"));
   };
   var App_default = App;
 
