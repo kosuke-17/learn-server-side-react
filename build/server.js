@@ -46069,13 +46069,13 @@ var require_server_node = __commonJS({
   }
 });
 
-// index.js
-var import_express = __toESM(require_express2(), 1);
-var import_react2 = __toESM(require_react(), 1);
-var import_server = __toESM(require_server_node(), 1);
+// server.js
+var import_express = __toESM(require_express2());
+var import_react2 = __toESM(require_react());
+var import_server = __toESM(require_server_node());
 
 // src/App.jsx
-var import_react = __toESM(require_react(), 1);
+var import_react = __toESM(require_react());
 var App = () => {
   const [clientMessage, setClientMessage] = (0, import_react.useState)("");
   const [count, setCount] = (0, import_react.useState)(0);
@@ -46086,7 +46086,7 @@ var App = () => {
 };
 var App_default = App;
 
-// index.js
+// server.js
 var PORT = 3e3;
 var app = (0, import_express.default)();
 app.get("/", (req, res) => {

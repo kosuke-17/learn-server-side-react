@@ -19285,11 +19285,11 @@
   });
 
   // src/index.jsx
-  var import_react2 = __toESM(require_react(), 1);
-  var import_client = __toESM(require_client(), 1);
+  var import_react2 = __toESM(require_react());
+  var import_client = __toESM(require_client());
 
   // src/App.jsx
-  var import_react = __toESM(require_react(), 1);
+  var import_react = __toESM(require_react());
   var App = () => {
     const [clientMessage, setClientMessage] = (0, import_react.useState)("");
     const [count, setCount] = (0, import_react.useState)(0);
