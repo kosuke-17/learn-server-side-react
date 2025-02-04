@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run server:build && npm run client:build",
+    "server:build": "esbuild server.js --bundle --outfile=build/server.js --platform=node --loader:.js=jsx",
+    "client:build": "esbuild src/index.jsx --bundle --outfile=build/client.js",
+    "start": "node build/server.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "esbuild": "^0.24.2",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
